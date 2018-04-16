@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Baca Buku</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-</head>
-
-<body id="top">
+<?php include "component/header.php"; ?>
 
     <!-- header
     ================================================== -->
@@ -44,7 +6,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
+                <!-- <img src="images/logo.png" alt="Homepage"> -->
             </a>
         </div>
 
@@ -64,7 +26,7 @@
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
 
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+                <p> Baca Buku - “You're never alone when you're reading a book.”― Susan Wiggs </p>
 
                 <ul class="header-nav__social">
                     <li>
@@ -76,12 +38,12 @@
                     <li>
                         <a href="#"><i class="fa fa-instagram"></i></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#"><i class="fa fa-behance"></i></a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div> <!-- end header-nav__content -->
@@ -114,20 +76,14 @@
                 </h1>
 
                 <div class="home-content__buttons">
-                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                    <a href="#contact" class="btn btn--stroke">
                         Login Admin
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="buku.php" class="btn btn--stroke">
                         Pinjam Buku
                     </a>
                 </div>
 
-            </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Scroll Down</span>
-                </a>
             </div>
 
             <div class="home-content__line"></div>
@@ -145,23 +101,13 @@
             <li>
                 <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
+            </li> -->
         </ul>
         <!-- end home-social -->
 
-    </section> <!-- end s-home -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
-
-</html>
+<?php include "component/footer.php"; ?>
