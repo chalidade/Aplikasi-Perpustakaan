@@ -44,41 +44,33 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Dashboard</h3>
-                <h1 class="display-2">Admin Menu</h1>
+              <h3 class="subhead">Dashboard</h3>
+              <h1 class="display-2">Input Buku</h1>
+                <div class="row">
+                  <form action="../input-buku.php" method="post">
+                  <div class="col-six">
+                    <input type="text"   name="id" placeholder="Kode Buku" style="width:100%">
+                  </div>
+                  <div class="col-six">
+                    <input type="text" name="judul" placeholder="Judul Buku"  style="width:100%">
+                  </div>
+                  <div class="col-six">
+                    <input type="text" name="jenis" placeholder="Jenis Buku"  style="width:100%">
+                  </div>
+                  <div class="col-six">
+                    <input type="text" name="tahun" placeholder="Tahun Terbit"  style="width:100%">
+                  </div>
+                  <div class="col-twelve">
+                    <label for="fileToUpload" style="width:100%;background:#515151;color:#fff; border:none;height:50px; padding-top:12px;">Upload Cover</label>
+                    <input type="file" name="gambar" id="fileToUpload" style="opacity: 0;position: absolute;z-index: -1;"/>
+                  </div>
+                  <div class="col-twelve">
+                    <input type="submit" value="Simpan" style="width:100%;background:#39b54a;color:#fff; border:none;">
+                  </div>
+                  </form>
+                </div>
             </div>
         </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-4 block-tab-full">
-          <div style="margin-left:100px;">
-
-            <div class="col-block service-item" data-aos="fade-up" style="border:solid thin #ddd; padding:20px;margin:10px;margin-bottom:40px;width:240px;height:240px;">
-              <div title="Input Buku Baru" class="pic-grid" style="height:200px; width:200px;">
-                <a href="input.php"><img src="../images/book.png"></a>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up" style="border:solid thin #ddd; padding:20px;margin:10px;margin-bottom:40px;width:240px;height:240px;">
-              <div title="Data Buku" class="pic-grid" style="height:200px; width:200px;">
-                <a href="data-buku.php"><img src="../images/rack.png"></a>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up" style="border:solid thin #ddd; padding:20px;margin:10px;margin-bottom:40px;width:240px;height:240px;">
-              <div title="Data Peminjam" class="pic-grid" style="height:200px; width:200px;">
-                <a href="data-peminjam.php"><img src="../images/people.png"></a>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up" style="border:solid thin #ddd; padding:20px;margin:10px;margin-bottom:40px;width:240px;height:240px;">
-              <div title="Logout" class="pic-grid" style="height:200px; width:200px;">
-                <a href="../index.php"><img src="../images/logout.png"></a>
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- end services-list -->
-
     </section> <!-- end s-services -->
 
     <!-- Java Script
@@ -88,5 +80,6 @@
     <script src="../js/main.js"></script>
 
 </body>
+
 
 </html>
