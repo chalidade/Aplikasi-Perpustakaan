@@ -51,20 +51,34 @@
 
         <div class="row services-list block-1-4 block-tab-full">
           <div style="margin-left:100px;">
+            <?php
+            include "data/koneksi.php";
+            $buku = "SELECT * FROM `buku`";
+
+            $result      = mysqli_query($connect,$buku);
+            while ($row  = mysqli_fetch_row($result))
+              {
+                $id       = $row[0];
+                $nama     = $row[1];
+                $jenis    = $row[2];
+                $tahun    = $row[3];
+                $gambar   = $row[4];
+            ?>
             <div class="col-block service-item" data-aos="fade-up" style="border:solid thin #ddd; padding:20px;margin:10px;margin-bottom:40px;width:240px;height:385px;">
-              <div class="pic-grid" style="height:200px; width:200px; background:url('images/sample-image.jpg'); background-size:cover;background-position: center;">
+              <div class="pic-grid" style="height:200px; width:200px; background:url('gambar/<?php echo $gambar; ?>'); background-size:cover;background-position: center;">
               </div>
-                    <h5 style="margin-top:10px;text-align:center;height:40px;"><a href="index.php">Brand Identity</a></h5>
+                    <h5 style="margin-top:10px;text-align:center;height:40px;"><a href="index.php"><?php echo $nama; ?></a></h5>
                     <div class="row block-1-2">
                       <div class="col-block" style="font-size: 12px;">
-                        Pengetahuan Umum
+                        <?php echo $jenis; ?>
                       </div>
                       <div class="col-block" style="float:right;text-align: center;">
-                        <h3 class="h3" style="margin-bottom:0px;color:#39b54a;">10</h3><p style="font-size:10px;text-transform:uppercase">Tersedia</p>
+                        <h3 class="h3" style="margin-bottom:0px;color:#39b54a;">1</h3><p style="font-size:10px;text-transform:uppercase">Tersedia</p>
                       </div>
-                      <a href="peminjam.php"><button type="button" name="pinjam" class="full-width btn--primary"> Pinjam </button></a>
+                      <a href="peminjam.php?id=<?php echo $id; ?>"><button type="button" name="pinjam" class="full-width btn--primary"> Pinjam </button></a>
                     </div>
-            </div>
+                  </div>
+            <?php } ?>
 
           </div>
         </div> <!-- end services-list -->

@@ -49,16 +49,20 @@
                 <div class="row">
                   <form action="final.php" method="post">
                   <div class="col-six">
-                    <input type="text" name="nama" placeholder="Nama Lengkap" style="width:100%">
+                    <?php
+                    $id_buku = $_REQUEST['id'];
+                    ?>
+                    <input type="text"   name="nama" placeholder="Nama Lengkap" style="width:100%">
+                    <input type="hidden" name="buku" value="<?php echo $id_buku; ?>">
                   </div>
                   <div class="col-six">
                     <input type="text" name="email" placeholder="Email"  style="width:100%">
                   </div>
                   <div class="col-six">
-                    <input type="text" name="Program Studi" placeholder="Program Studi"  style="width:100%">
+                    <input type="text" name="prodi" placeholder="Program Studi"  style="width:100%">
                   </div>
                   <div class="col-six">
-                    <input type="text" name="Alamat" placeholder="Alamat Lengkap"  style="width:100%">
+                    <input type="text" name="alamat" placeholder="Alamat Lengkap"  style="width:100%">
                   </div>
                   <div class="col-twelve">
                     <input type="submit" value="Pinjam Buku" style="width:100%;background:#39b54a;color:#fff; border:none;">

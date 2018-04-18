@@ -76,7 +76,7 @@
                 </h1>
 
                 <div class="home-content__buttons">
-                    <a href="#contact" class="btn btn--stroke">
+                    <a href="admin/index.php" class="btn btn--stroke">
                         Login Admin
                     </a>
                     <a href="buku.php" class="btn btn--stroke">
