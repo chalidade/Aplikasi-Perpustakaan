@@ -47,7 +47,7 @@
               <h3 class="subhead">Dashboard</h3>
               <h1 class="display-2">Input Buku</h1>
                 <div class="row">
-                  <form action="../input-buku.php" method="post">
+                  <form action="../input-buku.php" method="post" enctype="multipart/form-data">
                   <div class="col-six">
                     <input type="text"   name="id" placeholder="Kode Buku" style="width:100%">
                   </div>
@@ -62,7 +62,7 @@
                   </div>
                   <div class="col-twelve">
                     <label for="fileToUpload" style="width:100%;background:#515151;color:#fff; border:none;height:50px; padding-top:12px;">Upload Cover</label>
-                    <input type="file" name="gambar" id="fileToUpload" style="opacity: 0;position: absolute;z-index: -1;"/>
+                    <input type="file" name="fileToUpload" id="fileToUpload" style="opacity: 0;position: absolute;z-index: -1;"/>
                   </div>
                   <div class="col-twelve">
                     <input type="submit" value="Simpan" style="width:100%;background:#39b54a;color:#fff; border:none;">

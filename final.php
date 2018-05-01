@@ -7,11 +7,10 @@ $nama   = $_POST['nama'];
 $email  = $_POST['email'];
 $prodi  = $_POST['prodi'];
 $alamat = $_POST['alamat'];
-$pinjam = date("d-m-Y");
+$pinjam = date('d-m-Y',time() + (0 * 24 * 60 * 60));
 $kembali = date('d-m-Y',time() + (7 * 24 * 60 * 60));
 
 ?>
-
 
 <!DOCTYPE html>
 <!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->

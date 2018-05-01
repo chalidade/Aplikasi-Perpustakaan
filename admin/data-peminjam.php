@@ -59,7 +59,6 @@
                     <?php
                     include "../data/koneksi.php";
                     $buku = "SELECT * FROM `data_pinjaman`";
-
                     $result      = mysqli_query($connect,$buku);
                     while ($row  = mysqli_fetch_row($result))
                       {
@@ -76,14 +75,14 @@
                       <td><?php echo $id_buku; ?></td>
                       <td><?php echo $pinjam; ?></td>
                       <td><?php echo $kembali; ?></td>
-                      <td><center> <a href="hapus.php?id=<?php echo $no; ?>&data=pinjam&status=<?php echo $status; ?>">
+                      <td><center>
                         <?php if($status == 0) {
-                          echo "<img src='../images/b.png' width='20px;'>";
+                          echo "<a href='hapus.php?id=$no&data=pinjam&status=$status'><img src='../images/b.png' width='20px;'></a>";
                         } else {
                           echo "<img src='../images/a.png' width='20px;'>";
                         }
                         ?>
-                        </a></center></td>
+                        </center></td>
                     </tr>
                   <?php } ?>
                 </table>
